@@ -2,15 +2,59 @@
     <div>
         <h1>This is Test</h1>
         <hr/>
+        <!-- <Lattice background='ssss' url='http://www.baidu.com' title='时间'/> -->
+        <!-- <Lattice background='ssss' url='http://www.baidu.com' title='时间'/> -->
         <Lattice background='ssss' url='http://www.baidu.com' title='时间'/>
+        <LatticeTable :listData='list' :listGutter='9' :listCols='6'/>
     </div>
 </template>
 <script>
 import Lattice from '@/components/Lattice'
+import LatticeTable from '@/components/LatticeTable'
 export default {
     name:'test',
     components:{
-        Lattice
+        Lattice,
+        LatticeTable
+    },
+    data(){
+        return{
+            list:[
+                {
+                    id:1,
+                    title:'尘世'
+                },
+                {
+                    id:2,
+                    title:'尘世'
+                },
+                {
+                    id:3,
+                    title:'尘世'
+                },
+                {
+                    id:4,
+                    title:'尘世'
+                },
+                {
+                    id:5,
+                    title:'尘世'
+                },
+                {
+                    id:6,
+                    title:'尘世'
+                },
+                {
+                    id:7,
+                    title:'尘世'
+                },
+                {
+                    id:8,
+                    title:'尘世'
+                },
+
+            ]
+        }
     }
 }
 </script>

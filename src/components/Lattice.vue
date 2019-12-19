@@ -1,13 +1,10 @@
 <template>
-    <div>
-        <h1>This is Lattice</h1>
-        <h2>{{background}}</h2>
-        <h2>{{url}}</h2>
-        <h2>{{title}}</h2>
-        <div style="width:30px; height:30px;">
-                sss
-        </div>
-    </div>
+     <a-card hoverable style="width:240px;height:240px">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" slot="cover" style="height:147px"/>
+        <a-card-meta title="Europe Street beat">
+            <template slot="description">{{title}}</template>
+    </a-card-meta>
+    </a-card>
 </template>
 <script>
 export default {
