@@ -16,15 +16,15 @@ export default {
     },
     methods:{
         init(){
-            window.console.log(this.background)
+            // window.console.log(this.background)
         }
     },
     created(){
-        window.console.log('The Lattice is created.')
+        // window.console.log('The Lattice is created.')
         this.init()
     },
     mounted(){
-        window.console.log('The Lattice is mounted.')
+        // window.console.log('The Lattice is mounted.')
     }
 }
 </script>
