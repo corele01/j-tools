@@ -33,6 +33,9 @@ const routes = [
       {
         path: 'testLattice',
         component: ()=> import('../views/test/Test.vue')
+      },{
+        path: 'testClock',
+        component: ()=> import('../views/test/TestClock.vue')
       }
     ]
   }
