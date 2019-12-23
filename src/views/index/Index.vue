@@ -1,10 +1,15 @@
 <template>
     <div>
-        <a-menu mode="horizontal" v-model="current" @click="goto">
-            <a-menu-item key="tools">
-                <a-icon type="appstore"/>全部
-            </a-menu-item>
-        </a-menu>
+        <a-row>
+            <a-col :span="2" class="logo"><span><b>J-TOOLS</b></span></a-col>
+            <a-col :span="21">
+                <a-menu mode="horizontal" v-model="current" @click="goto">
+                    <a-menu-item key="tools">
+                        <a-icon type="appstore"/>全部
+                    </a-menu-item>
+                </a-menu>
+            </a-col>
+        </a-row>
         <router-view/>
     </div>
 </template>
@@ -23,3 +28,13 @@ export default {
     }
 }
 </script>
+<style scoped>
+    .logo{
+        text-align:center;
+        line-height:48px;
+        font-size:16px;
+        border-bottom: 1px solid #e8e8e8;
+        width:130px;
+        margin-left: 5px;
+    }
+</style>
