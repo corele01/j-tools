@@ -1,7 +1,7 @@
 <template>
     <div class="body">
         <a-row>
-          <a-col :span="16">
+          <a-col :span="18">
               <a-card>
             <a-row class="dateHeader">
                 <a-col :span="4"><a-icon type="global"/> 现在时间：</a-col>
