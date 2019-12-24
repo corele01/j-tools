@@ -23,7 +23,7 @@ export default {
                 listData:[{
                     id:1,
                     title:'时间戳工具',
-                    subtitle:'时间戳工具',
+                    subTitle:'时间戳工具',
                     gotoPath:'/dateTools'
                 }]
             }
