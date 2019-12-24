@@ -50,14 +50,23 @@
                 </a-col>
             </a-row>
         </a-card>
+        <a-collapse style="margin-top:15px;" v-model="activePanel">
+              <a-collapse-panel key="java" header="Java8">
+                    <CodeEditor :content="javaCode.content"></CodeEditor>
+              </a-collapse-panel>
+            </a-collapse>
           </a-col>
         </a-row>
         
     </div>
 </template>
 <script>
+import CodeEditor from '@/components/CodeEditor.vue'
 export default {
     name:'DateTools',
+    components:{
+        CodeEditor
+    },
     data(){
         return{
             nowDateFormat:undefined,
@@ -67,7 +76,11 @@ export default {
             dateFormatMs:undefined,
             msType:'ms',
             dateMs:undefined,
-            dateMsDate:undefined
+            dateMsDate:undefined,
+            javaCode:{
+                content:'inted...'
+            },
+            activePanel:['java']
         }
     },
     methods:{
@@ -77,6 +90,7 @@ export default {
             this.nowWeek = this.getWeek(date);
             this.dateFormatStr = this.nowDateFormat;
             this.dateMs = date.getTime();
+            this.javaCode.content='//获取当前时间戳\nlong ms = System.currentTimeMillis();\n\n//取当前时间\nLocalDateTime nowTime = LocalDateTime.now();\n\n//格式 时间为 \'yyyy-MM-dd HH:mm:ss\' 形式\nDateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");\nString format = dateTimeFormatter.format(nowTime);\n\n//将 dateStr 格式化为 localDateTime\nString dateStr="2019-01-02 22:13:10";\nDateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");\nLocalDateTime time = LocalDateTime.parse(dateStr, formatter);\n'
         },
         toTime(){
             if (this.dateMs.length < 5){

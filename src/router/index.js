@@ -34,7 +34,7 @@ const routes = [
         path: 'testLattice',
         component: ()=> import('../views/test/Test.vue')
       },{
-        path: 'testClock',
+        path: 'testCode',
         component: ()=> import('../views/test/TestClock.vue')
       }
     ]
