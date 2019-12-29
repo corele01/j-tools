@@ -8,6 +8,7 @@
 
 <script>
     import CodeEditor from '@/components/CodeEditor.vue'
+    import {addCodeExample} from '@/api/codeApi.js'
     export default {
         name: "AddCode",
         components:{
@@ -21,6 +22,12 @@
         methods:{
             addCodeExample(){
                 window.console.log(this.content)
+                addCodeExample({
+                    codeType:1,
+                    codeExample:this.content
+                }).then(res=>{
+                    window.console.log(res)
+                })
             },
             onChange(val){
                 this.content = val;
