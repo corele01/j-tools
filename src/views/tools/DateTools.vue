@@ -52,7 +52,7 @@
         </a-card>
         <a-collapse style="margin-top:15px;" v-model="activePanel">
               <a-collapse-panel key="java" header="Java8">
-                    <CodeEditor :content="javaCode.content"></CodeEditor>
+                    <CodeEditor :value="javaCode.content"></CodeEditor>
               </a-collapse-panel>
             </a-collapse>
           </a-col>

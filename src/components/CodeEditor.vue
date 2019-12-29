@@ -1,5 +1,5 @@
 <template>
-    <codemirror v-model="codeText"></codemirror>
+    <codemirror v-model="codeValue" @changes="codeChange"></codemirror>
 </template>
 <script>
 
@@ -19,15 +19,25 @@ export default {
         codemirror
     },
     props:{
-        content:String
+        value:String
     },
     data(){
         return{
-            codeText:''
+            codeValue:this.value
         }
     },
-    created(){
-        this.codeText = this.content;
+    watch:{
+        value(val){
+            this.codeValue = val;
+        },
+        codeValue(val){
+            this.$emit("on-result-change",val);
+        }
+    },
+    methods:{
+        codeChange(){
+            // window.console.log(this.codeValue)
+        }
     }
 }
 </script>

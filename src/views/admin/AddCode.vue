@@ -1,10 +1,31 @@
 <template>
+    <div>
+        <CodeEditor v-model="content" @on-result-change='onChange'></CodeEditor>
+        <a-button @click="addCodeExample">添加</a-button>
+    </div>
     
 </template>
 
 <script>
+    import CodeEditor from '@/components/CodeEditor.vue'
     export default {
-        name: "AddCode"
+        name: "AddCode",
+        components:{
+            CodeEditor
+        },
+        data(){
+            return{
+                content:''
+            }
+        },
+        methods:{
+            addCodeExample(){
+                window.console.log(this.content)
+            },
+            onChange(val){
+                this.content = val;
+            }
+        }
     }
 </script>
 
