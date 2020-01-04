@@ -2,7 +2,7 @@ import axios from 'axios'
 
 axios.defaults.timeout = 10000
 
-const host = 'http://localhost:8080/'
+const host = 'http://corele.top:8080/'
 
 //请求返回拦截
 axios.interceptors.response.use(response => {
