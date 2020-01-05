@@ -15,7 +15,7 @@
                     </a-col>
                   </a-row>
                 <a-row style="margin-top:15px">
-                    <a-col :span="2" style="font-size:16px;line-height:35px;height:20px;">年份</a-col>
+                    <a-col :span="2" style="font-size:16px;line-height:35px;height:20px;"><a-icon type="calendar" theme="twoTone" />  年份</a-col>
                     <a-col :span="4">
                         <a-input type="number" style="font-family: 'Courier New', Courier, monospace;" v-model="inputYear"></a-input>
                     </a-col>

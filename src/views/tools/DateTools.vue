@@ -4,7 +4,7 @@
           <a-col :span="18">
               <a-card>
             <a-row class="dateHeader">
-                <a-col :span="4"><a-icon type="global"/> 现在时间：</a-col>
+                <a-col :span="4"><a-icon type="global" /> 现在时间：</a-col>
                 <a-col :span="6">{{nowDateFormat}}</a-col>
                 <a-col :span="6">{{nowDateIntTime}} ms</a-col>
                 <a-col :span="6">{{nowWeek}} Week</a-col>
@@ -13,7 +13,7 @@
         <a-card style="margin-top:10px">
             <a-row>
                 <a-col :span="3" style="font-size:16px;">
-                    <a-icon type="code" />  时间戳
+                    <a-icon type="code" theme="twoTone" twoToneColor="#52c41a"/>  时间戳
                 </a-col>
                 <a-col :span="6">
                     <a-input v-model="dateFormatStr" style="font-family: 'Courier New', Courier, monospace;"></a-input>
@@ -32,7 +32,7 @@
             </a-row>
             <a-row style="margin-top:15px;">
                 <a-col :span="3" style="font-size:16px;">
-                    <a-icon type="code" />  日期时间
+                    <a-icon type="code" theme="twoTone" twoToneColor="#52c41a"/>  日期时间
                 </a-col>
                 <a-col :span="6">
                     <a-input v-model="dateMs" style="font-family: 'Courier New', Courier, monospace;">

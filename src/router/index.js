@@ -17,7 +17,7 @@ const routes = [
     component: () => import('../views/index/Index.vue'),
     children:[
       {
-        path:'index',
+        path:'',
         component: () => import('../views/index/Main.vue')
       },{
         path:'dateTools',
