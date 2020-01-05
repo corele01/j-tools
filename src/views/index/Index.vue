@@ -1,7 +1,7 @@
 <template>
     <div>
         <a-row>
-            <a-col :span="2" class="logo"><span><b>J-TOOLS</b></span></a-col>
+            <a-col :span="2" class="logo" @click="goto('/')"><span><b>J-TOOLS</b></span></a-col>
             <a-col :span="21">
                 <a-menu mode="horizontal" v-model="current" @click="goto('/')">
                     <a-menu-item key="tools">
@@ -36,5 +36,6 @@ export default {
         border-bottom: 1px solid #e8e8e8;
         width:130px;
         margin-left: 5px;
+        cursor: pointer;
     }
 </style>

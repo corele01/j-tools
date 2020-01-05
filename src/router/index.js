@@ -49,6 +49,10 @@ const routes = [
         component: ()=> import('../views/test/TestClock.vue')
       }
     ]
+  },{
+    path: '/version',
+    name: 'version',
+    component: () => import('../views/admin/VersionInfo.vue')
   }
 ]
 
