@@ -15,6 +15,9 @@ const routes = [
       },{
         path:'dateTools',
         component: () => import('../views/tools/DateTools.vue')
+      },{
+        path:'leapYear',
+        component: () => import('../views/tools/LeapYear.vue')
       }
     ]
   },

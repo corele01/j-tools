@@ -1,6 +1,6 @@
 <template>
-     <a-card hoverable style="width:240px;height:240px" @click="goto">
-        <img alt="加载中" src="../assets/loading.png" slot="cover" style="height:147px"/>
+     <a-card hoverable style="" @click="goto">
+        <!-- <img alt="加载中" src="../assets/loading.png" slot="cover" style="height:147px"/> -->
         <a-card-meta :title='title'>
             <template slot="description">{{subTitle}}</template>
         </a-card-meta>
@@ -26,14 +26,13 @@ export default {
             this.routePath=this.gotoPath;
         },
         goto(){
-            window.console.log(this.gotoPath);
             this.$router.push({path:this.gotoPath});
         }
     },
     created(){
         // window.console.log('The Lattice is created.')
         this.init()
-        window.console.log(this.gotoPath);
+        // window.console.log(this.gotoPath);
 
     },
     mounted(){

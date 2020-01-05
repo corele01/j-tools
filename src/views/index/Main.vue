@@ -25,6 +25,11 @@ export default {
                     title:'时间戳工具',
                     subTitle:'时间戳工具',
                     gotoPath:'/dateTools'
+                },{
+                    id:2,
+                    title:'闰年计算',
+                    subTitle:'闰年计算',
+                    gotoPath:'/leapYear'
                 }]
             }
         }

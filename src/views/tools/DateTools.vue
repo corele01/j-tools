@@ -177,9 +177,6 @@ export default {
 }
 </script>
 <style scoped>
-    .body{
-        padding: 10px;
-    }
     .dateHeader{
         font-size: 16px;
         font-family: 'Courier New', Courier, monospace;

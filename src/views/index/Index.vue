@@ -5,12 +5,12 @@
             <a-col :span="21">
                 <a-menu mode="horizontal" v-model="current" @click="goto">
                     <a-menu-item key="tools">
-                        <a-icon type="appstore"/>全部
+                        <a-icon type="calendar" theme="twoTone"/>时间工具
                     </a-menu-item>
                 </a-menu>
             </a-col>
         </a-row>
-        <router-view/>
+        <router-view style="padding:10px"/>
     </div>
 </template>
 <script>
