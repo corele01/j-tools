@@ -3,7 +3,7 @@
         <a-row>
             <a-col :span="2" class="logo"><span><b>J-TOOLS</b></span></a-col>
             <a-col :span="21">
-                <a-menu mode="horizontal" v-model="current" @click="goto">
+                <a-menu mode="horizontal" v-model="current" @click="goto('/index')">
                     <a-menu-item key="tools">
                         <a-icon type="calendar" theme="twoTone"/>时间工具
                     </a-menu-item>
@@ -22,8 +22,8 @@ export default {
         }
     },
     methods:{
-        goto(){
-            this.$router.push("/")
+        goto(path){
+            this.$router.push(path)
         }
     }
 }
