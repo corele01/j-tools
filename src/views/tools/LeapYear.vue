@@ -5,7 +5,7 @@
               <a-card style="">
                   <a-row class="dateHeader">
                     <a-col :span="6">当前年份：{{nowYear}}</a-col>
-                    <a-col :span="4">{{leapStr}}</a-col>
+                    <a-col :span="4" style="color:rgb(24, 144, 255);">{{leapStr}}</a-col>
                   </a-row>
               </a-card>
               <a-card style="margin-top:10px;">
