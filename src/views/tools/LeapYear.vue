@@ -27,21 +27,33 @@
                     </a-col>
                 </a-row>
               </a-card>
+              <a-collapse style="margin-top:15px;" v-model="activePanel">
+              <a-collapse-panel key="code" header="Java8">
+                    <CodeEditor :value="codeEdit"></CodeEditor>
+              </a-collapse-panel>
+            </a-collapse>
           </a-col>
           <a-col :span="6"></a-col>
         </a-row>
     </div>
 </template>
 <script>
+import CodeEditor from '@/components/CodeEditor.vue'
+import {getCodeExample} from '@/api/codeApi.js'
 export default {
     name:'LeapYear',
+    components:{
+        CodeEditor
+    },
     data(){
         return{
             nowYear:'0000',
             leapStr:'',
             inputYear:'',
             inputLeap:'',
-            yearList:[2000]
+            yearList:[2000],
+            activePanel:['code'],
+            codeEdit:'sss'
         }
     },
     methods:{
@@ -60,6 +72,10 @@ export default {
                 
             }
             this.yearList = list;
+
+            getCodeExample(2).then(res =>{
+                this.codeEdit = res.data.codeExample;
+            })
         },
         getYear(){
             const nowDate = new Date();
