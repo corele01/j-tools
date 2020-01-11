@@ -47,6 +47,9 @@ const routes = [
       },{
         path: 'testCode',
         component: ()=> import('../views/test/TestClock.vue')
+      },{
+        path: 'json',
+        component: ()=> import('../views/tools/JsonFormat.vue')
       }
     ]
   },{
