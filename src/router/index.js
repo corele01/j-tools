@@ -18,13 +18,25 @@ const routes = [
     children:[
       {
         path:'',
-        component: () => import('../views/index/Main.vue')
+        component: () => import('../views/index/DateTools.vue')
       },{
         path:'dateTools',
+        component: () => import('../views/index/DateTools.vue'),
+      },{
+        path:'jsonTools',
+        component: () => import('../views/index/JsonTools.vue'),
+      },
+      
+      
+      {
+        path:'dateTool',
         component: () => import('../views/tools/DateTools.vue')
       },{
         path:'leapYear',
-        component: () => import('../views/tools/LeapYear.vue')
+        component:() => import('../views/tools/LeapYear.vue')
+      },{
+        path:'jsonFormat',
+        component: () => import('../views/tools/JsonFormat.vue')
       }
     ]
   },

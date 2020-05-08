@@ -6,7 +6,7 @@
 <script>
 import LatticeTable from '@/components/LatticeTable'
 export default {
-    name:'Main',
+    name:'JsonTools',
     components:{
         LatticeTable
     },
@@ -22,14 +22,9 @@ export default {
                 listCols:6,
                 listData:[{
                     id:1,
-                    title:'时间戳工具',
-                    subTitle:'时间戳工具',
-                    gotoPath:'/dateTools'
-                },{
-                    id:2,
-                    title:'闰年计算',
-                    subTitle:'闰年计算',
-                    gotoPath:'/leapYear'
+                    title:'Json格式化',
+                    subTitle: 'Json格式化',
+                    gotoPath:'/jsonFormat'
                 }]
             }
         }
