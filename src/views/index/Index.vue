@@ -5,10 +5,10 @@
             <a-col :span="21">
                 <a-menu mode="horizontal" v-model="current">
                     <a-menu-item key="dateTools" @click="goto('/dateTools')">
-                        <a-icon type="calendar" theme="twoTone"/>时间工具
+                        <a-icon type="calendar" />时间工具
                     </a-menu-item>
                     <a-menu-item key="jsonTools" @click="goto('/jsonTools')">
-                        <a-icon type="calendar" theme="twoTone" />Json工具
+                        <a-icon type="block" />Json工具
                     </a-menu-item>
                 </a-menu>
             </a-col>
