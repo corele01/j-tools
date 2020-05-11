@@ -1,12 +1,8 @@
 <template>
   <div>
-      <a-card>
-          This is jsonFormat Page.
-      </a-card>
       <div class="json-class">
-          <vue-json-editor :showBtns="false" lang="zh" v-model="josnEditor" mode="code" search="false" mainMenuBar="false"/>
+          <vue-json-editor :showBtns="false" lang="zh" v-model="josnEditor" search="false" mainMenuBar="false"/>
       </div>
-      
   </div>
 </template>
 
@@ -15,12 +11,12 @@ import VueJsonEditor from 'vue-json-editor'
 export default {
     name:'JsonFormat',
     components:{
-        VueJsonEditor
+        VueJsonEditor,
     },
     data(){
         return{
             josnEditor:{
-                mode:'tree'
+                mode:'all'
             }
         }    
     }

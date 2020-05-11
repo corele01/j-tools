@@ -7,8 +7,10 @@ import {codemirror} from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
 import 'ant-design-vue/dist/antd.css';
 import {get,post} from './utils/http'
+import jsoneditor from 'jsoneditor';
 
 Vue.config.productionTip = false
+Vue.prototype.$jsoneditor= jsoneditor
 
 Vue.use(Antd);
 Vue.use(codemirror)
