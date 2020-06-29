@@ -19,6 +19,9 @@ export default {
                 mode:'all'
             }
         }    
+    },
+    created(){
+        window.console.log(process.env.VUE_APP_API_URL)
     }
 }
 </script>
