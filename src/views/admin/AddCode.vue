@@ -1,7 +1,8 @@
 <template>
     <div>
-        <CodeEditor v-model="content" @on-result-change='onChange'></CodeEditor>
-        <a-button @click="addCodeExample">添加</a-button>
+        <a-input></a-input>
+        <CodeEditor v-model="content" @on-result-change='onChange' class="edit"></CodeEditor>
+        <a-button @click="addCodeExample" style="margin-top:10px">添加</a-button>
     </div>
     
 </template>
@@ -37,5 +38,8 @@
 </script>
 
 <style scoped>
-
+    .edit{
+        margin-top:10px;
+        border: 1px solid #55b9f3;
+    }
 </style>
