@@ -47,6 +47,9 @@ const routes = [
     children:[{
       path: 'code',
       component: () => import('../views/admin/AddCode.vue')
+    },{
+      path: 'addDocument',
+      component: () => import('../views/admin/addDocument.vue')
     }]
   },{
     path: '/test',

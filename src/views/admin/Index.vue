@@ -7,6 +7,9 @@
                     <a-menu-item key="dateTools" @click="goto('/admin/code')">
                         <a-icon type="calendar" />addCode
                     </a-menu-item>
+                     <a-menu-item key="addDocument" @click="goto('/admin/addDocument')">
+                        <a-icon type="calendar" />addDocument
+                    </a-menu-item>
                 </a-menu>
             </a-col>
         </a-row>
