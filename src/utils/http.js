@@ -1,5 +1,5 @@
 import axios from 'axios'
-import qs from 'qs'
+//import qs from 'qs'
 
 const host = process.env.VUE_APP_API_URL
 const isDebug = process.env.VUE_APP_DEBUG
@@ -12,7 +12,7 @@ axios.interceptors.request.use(
         config.baseUrl = host
         config.url = config.baseUrl + config.url
         if (config.method === 'post'){
-            config.data = qs.stringify(config.data)
+            //config.data = qs.stringify(config.data)
         }
         if (isDebug){
             window.console.log("Request => " + JSON.stringify(config))
